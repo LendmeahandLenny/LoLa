@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
 
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <div class="navcon">
     <div class="navbtn">
-      <button type="button" name="Sets" class="setbtn navbtn"><a href="#"></a> Sets </button>
-      <button type="button" name="Media" class="mdabtn navbtn"><a href="#"></a> Media </button>
-      <button type="button" name="Explore" class="exbtn navbtn"> <a href="#"></a> Explore</button>
+
+      <div class="setbtn navbtn">
+        <button type="button" name="Sets"><a href="#"></a> Sets </button>
+      </div>
+
+      <div class="mdabtn navbtn">
+        <button type="button" name="Media"><a href="#"></a> Media </button>
+      </div>
+
+      <div class="exbtn navbtn">
+        <button type="button" name="Explore"> <a href="#"></a> Explore</button>
+      </div>
+
     </div>
+  </div>
 
-    <div class="login">
-      
-    </div>
-  </head>
-  <body>
-    <style media="screen">
-      body{
-        background-color: black;
-      }
+  <div class="login">
 
-      .navbtn{
-        width: 100px;
-        height: 99px;
-        margin: 20px;
-        display: inline;
-        margin-top: 250px;
-        margin-left: 160px;
-        text-align: center;
-        font-size: 25px;
-        color: white;
-        border-width: thick;
-        border-color: rgb(30, 0, 0);
-        flex-direction: column;
-      }
+  </div>
+</head>
 
-      .setbtn{
-        background-color:rgb(60, 0, 0);
-        border-radius: 50%;
-        border-style: solid;
-        border-color: rgb(30, 0, 0);
-      }
+<body>
+  <style media="screen">
+    body {
+      background-color: black;
+    }
 
-      .mdabtn{
-          background-color:rgb(60, 0, 0);
-          border-radius: 50%;
-          border-color: rgb(30, 0, 0);
-          border-style: solid;
-      }
+    .navcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
 
-      .exbtn{
-          background-color:rgb(60, 0, 0);
-          border-radius: 50%;
-          border-color: rgb(30, 0, 0);
-          border-style: solid;
-      }
+    }
 
 
-    </style>
-  </body>
+    .navbtn {
+      width: 100px;
+      height: 100px;
+      border-width: thick;
+      border-color: rgb(30, 0, 0);
+      display: flex;
+    }
+
+    .navbtn button {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      border-style: groove;
+      border-color: rgb(10, 10, 10);
+      font-size: 20px;
+      color: rgb(50, 40, 30);
+    }
+
+    .navbtn :hover {
+      color: rgb(100, 100, 100);
+      border-color: rgb(105, 100, 100);
+    }
+  </style>
+</body>
+
 </html>
