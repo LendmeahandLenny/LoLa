@@ -3,82 +3,194 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-
-  <div class="navcon">
-    <div class="navbtn">
-
-      <div class="setbtn navbtn">
-        <a href="#">Sets </a>
-      </div>
-
-      <div class="mdabtn navbtn">
-        <a href="Media/Media.html">Media </a>
-      </div>
-
-      <div class="exbtn navbtn">
-        <a href="#">Explore</a>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="login">
-
-  </div>
 </head>
 
 <body>
-  <style media="screen">
+  <section class="grid">
+    <div class="sidenav">
+      <a href="#">Rss </a>
+      <a href="#">Shop</a>
+      <a href="#">Tip </a>
+    </div>
+
+    <div class="header">
+      <a class="lem" href="#about">
+        <img src="/home/birdy/Documents/LoLa/LemiLav/LemonHeader.png">
+      </a>
+    </div>
+
+
+
+    <div class="main">
+      <!-- <a href="#"> <h2 class="one">This is title text</h2>
+      <p> This is summary text</p>
+    </a> -->
+
+      <div class="tea main two">
+        <a href="/Media/2020/Octuras Tea Twins.html"> <h2>Octuras Tea Twins</h2>
+        </a>
+      </div>
+
+      <div class="moving main three">
+        <a href="/Media/2020/Moving Forward.html"> <h2>Moving Forward</h2>
+        </a>
+      </div>
+
+      <div class="hello main two">
+        <a href="/Media/2020/Hello again..html"> <h2> Hello Again</h2>
+        </a>
+      </div>
+
+      <div class="tear main one">
+        <a href="/Media/2020/A Bottle Of Tears.html"> <h2>A Bottle Of Tears</h2>
+        </a>
+      </div>
+
+      <div class="silence main two">
+        <a href="/Media/2020/Respect The Silence.html"> <h2>Respect The Silence</h2>
+        </a>
+      </div>
+
+      <div class="prog main three">
+        <a href="/Media/2020/Slow progress is still progress.html"> <h2>Slow Progress Is Still Progress </h2>
+        </a>
+      </div>
+
+      <div class="flag main two">
+        <a href="/Media/2020/Awareness in the form of a dancing flag.html"> <h2>Awarness In The Form Of A Dancing Flag </h2>
+        </a>
+      </div>
+
+      <div class="sleep main one">
+        <a href="/Media/2020/May we all sleep well and dream kindly tonight.html"> <h2>May We All Sleep Well And Dream Kindly</h2>
+        </a>
+      </div>
+
+      <div class="ltr main two">
+      <a href="/Media/2020/A Letter To The Past.html">  <h2>A Letter To The Past</h2>
+      </a>
+      </div>
+
+      <div class="push main three">
+      <a href="/Media/2019/ThePush.html">   <h2>The Push</h2>
+      </a>
+      </div>
+
+      <div class="fbp main two">
+        <a href="/Media/2019/My First Blog Post.html"> <h2>First blog post</h2>
+        
+        </a>
+      </div>
+    </div>
+
+
+
+      <div class="footer dots">
+        <a href="#nav">
+          <img src="/home/birdy/Pictures/Drawing/LoLa/Dotted.png">
+        </a>
+      </div>
+
+  </section>
+
+
+  <style>
     body {
       background-color: black;
     }
-
-    .navcon {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      height: 600px;
+    html body{
+      width: 100%;
+      height: 100%;
     }
 
 
-    .navbtn {
-      width: 100px;
-      height: 100px;
-      display: flex;
-      padding: 40px;
-      justify-content: space-around;
+    .grid {
+      display: grid;
+      grid-template-areas:
+       "sidenav header"
+        "main main"
+        "footer footer";
+      grid-template-columns: 1% auto;
+      grid-template-rows: auto auto auto;
+      grid-gap: 1%;
     }
 
-    .navbtn a {
-      width: 100px;
-      height: 100px;
+    .sidenav {
+      grid-area: sidenav;
+    line-height: 250%;
+    }
+
+    .header {
+    grid-area: header;
+    }
+
+    .lem img {
+      grid-area: header;
+      width: 6%;
+      margin-left: 41%;
+      z-index: 1;
+      border-style: solid;
       border-radius: 50%;
-      border-style: groove;
-      border-color: rgb(10, 10, 10);
-      border-width: 6px;
-      font-size: 20px;
-      color: rgb(50, 40, 30);
-      text-decoration: none;
-      text-align: center;
-      line-height: 100px;
-      background-color: black;
-      padding: 10px 10px;
-
+      border-color: #edacc0;
+      padding: 4%;
     }
 
-    .navbtn :hover a {
-      color: rgb(100, 100, 100);
-      border-color: rgb(105, 100, 100);
-      border-style: groove;
-      border-width: 2px;
-      padding: 10px 10px;
-      text-decoration: none;
+
+    .main {
+      grid-area: main;
+      color: white;
       text-align: center;
-      line-height: 100px;
-      background-color: black;
-      border-radius: 50%;
+      z-index: 1
     }
+
+    .one{
+      border-top-color: #edd36a;
+      border-top-style: solid;
+      border-top-width: medium;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 2%
+    }
+
+    .two{
+      border-top-color: #edacc0;
+      border-top-style: solid;
+      border-top-width: medium;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 2%
+    }
+
+    .three{
+      border-top-color: #eda800;
+      border-top-style: solid;
+      border-top-width: medium;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 2%
+    }
+
+    a{
+      text-decoration-line: none;
+      color: white;
+    }
+
+
+    .footer{
+      grid-area:footer;
+    }
+
+    .dots img{
+      grid-area:footer;
+      width: 80%;
+      margin-left: 10%;
+    }
+    .dots a{
+      width: 2%;
+    }
+
   </style>
 </body>
 
