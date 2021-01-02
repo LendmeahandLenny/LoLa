@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <section class="grid">
+    <div class="sub">
+      <h2> Other places I exist on the web: </h2>
+
+      <a href="https://www.instagram.com/lemonlickerl/"><h2>Instagram</h2></a>
+      <a href="https://www.reddit.com/r/NationalUbiLobeLab/"><h2>Reddit</h2></a>
+      <a href="https://www.youtube.com/channel/UCj2MRv8Fcph1RS9tDwO2Nnw/videos"><h2>Youtube</h2></a>
+    </div>
+
+    <p id="info">This website will wear many different faces during its lifetiime; please enjoy your visit, take care and remember to be kind to yourself. </p>
+
+    <!--<div class="shop">
+      <h2> Checkout my shop</h2>
+      <a href="https://www.redbubble.com/people/LoLabPorter/shop?asc=u"><h2>Redbubble</h2></a>
+      <h2>Pins</h2>
+        <div class="slideshow">
+      <a href="https://www.redbubble.com/i/pin/Wet-Earth-by-LoLabPorter/66699586.NP9QY?asc=u">
+        <img src="work-66699586-pin.jpg">
+      </a>
+
+
+        <a href="https://www.redbubble.com/i/pin/Chrima-by-LoLabPorter/64831338.NP9QY?asc=u">
+          <img src="work-64831338-pin.jpg">
+        </a>
+
+        <a href="https://www.redbubble.com/i/pin/Unsi-by-LoLabPorter/65013660.NP9QY?asc=u">
+          <img src="work-65013660-pin.jpg">
+        </a>
+
+
+          <a href="https://www.redbubble.com/i/pin/Unsi-V-2-by-LoLabPorter/65018910.NP9QY?asc=u">
+            <img src="work-65018910-pin.jpg">
+          </a>
+        <a href="https://www.redbubble.com/i/pin/Unsi-V-3-by-LoLabPorter/65019933.NP9QY?asc=u">
+          <img src="work-65019933-pin.jpg">
+        </a>
+
+        <a href="https://www.redbubble.com/i/pin/Faced-With-Negativity-by-LoLabPorter/66308120.NP9QY?asc=u">
+          <img src="work-66308120-pin.jpg">
+        </a>
+
+    </div> -->
+
+
+  </div>
+
+
+    <div class="tip">
+      <a href="https://paypal.me/2m3o6571?locale.x=en_US"><h2>Tip</h2></a>
+    </div>
+  </section>
+
+    <style>
+    body{
+      background-color: black;
+      width: 100%;
+      height: 100%;
+    }
+    .grid{
+      display: grid;
+      grid-template-areas:
+       "header header"
+        "sub sub"
+        "shop shop"
+        "tip tip";
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto auto;
+      grid-gap: 1%;
+    }
+
+
+    #info{
+      color: white;
+      font-size: 150%;
+    }
+    h2{
+      color: white;
+    }
+
+    .sub{
+      grid-area: sub;
+    }
+
+    .shop{
+      grid-area: shop;
+    }
+
+    .tip{
+      grid-area: tip;
+    }
+      </style>
+  </body>
+</html>
