@@ -6,20 +6,24 @@
   </head>
   <body>
     <section class="grid">
+      <div class="head">
+        <p id="info">This website will wear many different faces during its lifetime; please enjoy your visit, take care and remember to be kind to yourself. </p>
+      </div>
+
+
     <div class="sub">
-      <h2> Other places I exist on the web: </h2>
+      <h2 id="web"> Other places I exist on the web: </h2>
 
       <a href="https://www.instagram.com/lemonlickerl/"><h2>Instagram</h2></a>
       <a href="https://www.reddit.com/r/NationalUbiLobeLab/"><h2>Reddit</h2></a>
       <a href="https://www.youtube.com/channel/UCj2MRv8Fcph1RS9tDwO2Nnw/videos"><h2>Youtube</h2></a>
     </div>
 
-    <p id="info">This website will wear many different faces during its lifetiime; please enjoy your visit, take care and remember to be kind to yourself. </p>
 
-    <!--<div class="shop">
-      <h2> Checkout my shop</h2>
-      <a href="https://www.redbubble.com/people/LoLabPorter/shop?asc=u"><h2>Redbubble</h2></a>
-      <h2>Pins</h2>
+    <!--<div class="shop">-->
+      <h2 id="check"> Checkout my shop</h2>
+      <a href="https://www.redbubble.com/people/LoLabPorter/shop?asc=u" id="shopl"><h2>Redbubble</h2></a>
+      <!-- <h2>Pins</h2>
         <div class="slideshow">
       <a href="https://www.redbubble.com/i/pin/Wet-Earth-by-LoLabPorter/66699586.NP9QY?asc=u">
         <img src="work-66699586-pin.jpg">
@@ -68,7 +72,9 @@
       grid-template-areas:
        "header header"
         "sub sub"
+        "sub2 sub2"
         "shop shop"
+        "shop2 shop2"
         "tip tip";
       grid-template-columns: auto auto;
       grid-template-rows: auto auto auto auto;
@@ -76,12 +82,32 @@
     }
 
 
+
     #info{
+      grid-area: header;
       color: white;
       font-size: 150%;
     }
+
+    #web{
+      grid-area: sub2;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
     h2{
       color: white;
+    }
+
+    #check{
+      grid-area: shop;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #shopl{
+      grid-area: shop2;
     }
 
     .sub{
