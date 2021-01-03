@@ -11,18 +11,26 @@
       </div>
 
 
-    <div class="sub">
+    <div>
       <h2 id="web"> Other places I exist on the web: </h2>
 
-      <a href="https://www.instagram.com/lemonlickerl/"><h2>Instagram</h2></a>
-      <a href="https://www.reddit.com/r/NationalUbiLobeLab/"><h2>Reddit</h2></a>
-      <a href="https://www.youtube.com/channel/UCj2MRv8Fcph1RS9tDwO2Nnw/videos"><h2>Youtube</h2></a>
+      <a href="https://www.instagram.com/lemonlickerl/" class="link"><h2>Instagram</h2></a>
+      <a href="https://www.reddit.com/r/NationalUbiLobeLab/" class="link"><h2>Reddit</h2></a>
+      <a href="https://www.youtube.com/channel/UCj2MRv8Fcph1RS9tDwO2Nnw/videos" class="link"><h2>Youtube</h2></a>
+    </div>
+
+    <div>
+      <h2 id="check"> Checkout my shop</h2>
+      <a href="https://www.redbubble.com/people/LoLabPorter/shop?asc=u" id="shopl"><h2>Redbubble</h2></a>
     </div>
 
 
+    <div>
+      <h2 id="x">Extra</h2>
+      <a href="https://paypal.me/2m3o6571?locale.x=en_US" id="tip"><h2>Tip</h2></a>
+    </div>
+
     <!--<div class="shop">-->
-      <h2 id="check"> Checkout my shop</h2>
-      <a href="https://www.redbubble.com/people/LoLabPorter/shop?asc=u" id="shopl"><h2>Redbubble</h2></a>
       <!-- <h2>Pins</h2>
         <div class="slideshow">
       <a href="https://www.redbubble.com/i/pin/Wet-Earth-by-LoLabPorter/66699586.NP9QY?asc=u">
@@ -50,15 +58,9 @@
           <img src="work-66308120-pin.jpg">
         </a>
 
-    </div> -->
-
-
-  </div>
-
-
-    <div class="tip">
-      <a href="https://paypal.me/2m3o6571?locale.x=en_US"><h2>Tip</h2></a>
     </div>
+  </div>-->
+
   </section>
 
     <style>
@@ -67,21 +69,24 @@
       width: 100%;
       height: 100%;
     }
+    h2{
+      color: white;
+    }
+
     .grid{
       display: grid;
       grid-template-areas:
-       "header header"
-        "sub sub"
-        "sub2 sub2"
-        "shop shop"
-        "shop2 shop2"
-        "tip tip";
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto auto auto;
+       "header"
+        "sub"
+        "sub2"
+        "shop"
+        "shop2"
+        "tip"
+        "tiph";
+      grid-template-columns: auto;
+      grid-template-rows: repeat(7, 28%);
       grid-gap: 1%;
     }
-
-
 
     #info{
       grid-area: header;
@@ -90,37 +95,41 @@
     }
 
     #web{
+    grid-area: sub;
+    margin-left: 30%;
+
+    }
+
+    .link{
       grid-area: sub2;
-      margin-left: auto;
-      margin-right: auto;
     }
 
-
-    h2{
-      color: white;
-    }
 
     #check{
       grid-area: shop;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 40%;
+      padding-top: 5%;
+
     }
+
+
 
     #shopl{
       grid-area: shop2;
     }
 
-    .sub{
-      grid-area: sub;
-    }
 
-    .shop{
-      grid-area: shop;
-    }
-
-    .tip{
+    #x{
       grid-area: tip;
+      margin-left: 50%;
+      padding-top: 5%;
+
     }
+
+    #tip{
+      grid-area: tiph;
+    }
+
       </style>
   </body>
 </html>
